@@ -443,7 +443,7 @@ export default class HTML extends PureComponent {
             const classStyles = _getElementClassStyles(attribs, classesStyles);
             const textElementStyles = this.filterBaseFontStyles(element, classStyles, props);
             const textElement = data ?
-                <Text style={textElementStyles}>{ data }</Text> :
+                <Text allowFontScaling={false} style={textElementStyles}>{ data }</Text> :
                 false;
 
             const style = [
